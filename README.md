@@ -12,7 +12,7 @@ install InvocationProfiler to obtain profiling results like:
 It works by wrapping original method with Benchmark.realtime and aggregating all instances invocations times,
 so:
 
-  3.times { A.new.suspected_method }
+    3.times { A.new.suspected_method }
 
 would count total 3 invocations in the A class
 
@@ -59,7 +59,7 @@ or just save them to a file:
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/invocation_profiler/fork )
+1. Fork it ( https://github.com/lowang/invocation_profiler/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
