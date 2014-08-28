@@ -57,6 +57,17 @@ or just save them to a file:
       ::A.write_times(Rails.root.join('tmp/class_a.profile'))
     end
 
+additional options are passed as Class constants:
+
+    class A
+      ...
+      UNTRACED_METHODS = /^_unmemoized_/
+      # or as an Array:
+      #UNTRACED_METHODS = ['_unmemoized_suspected_method1',...]
+      SAMPLE_TIMES = 7
+      include ::InvocationProfiler::Aggregated
+    end
+
 ## Contributing
 
 1. Fork it ( https://github.com/lowang/invocation_profiler/fork )
